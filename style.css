@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Nunito&family=Poppins:wght@300;700&family=Press+Start+2P&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/shoesandlesbians.png");
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.banner {
+  background-color: rgb(4, 94, 94);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 0.09rem;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.banner > a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: underline;
+}
+
+nav {
+  /* position: fixed; */
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  top: 4rem;
+}
+
+nav > div:nth-child(2) {
+  text-align: center;
+}
+
+#logo {
+  margin-top: 6px;
+  width: 18rem;
+  height: 3.8rem;
+}
+
+.navi {
+  width: 65rem;
+  display: flex;
+  align-items: center;
+}
+
+#left > div {
+  width: 8rem;
+  text-align: center;
+}
+
+.navi a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(42, 39, 39);
+}
+
+#right {
+  justify-content: flex-end;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+#right > div {
+  width: 9rem;
+  text-align: center;
+}
+
+#right > div:first-child {
+  width: 13rem;
+}
+
+#right > div:nth-child(3) ~ div {
+  width: 5.5rem;
+}
+
+#sales {
+  color: red;
+}
+
+.main {
+  color: white;
+  position: absolute;
+  left: 8vw;
+  top: 67vh;
+  letter-spacing: 0.2rem;
+  line-height: 4.8rem;
+}
+
+.main h1 {
+  font-size: 5rem;
+}
+.main h2 {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+.buttons-1 {
+  width: 38rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-1 button {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
+}
+
+.buttons-1 button:hover {
+  color: white;
+  background-color: #293241;
+}
+
+.banner-2 {
+  background-color: #293241;
+  color: white;
+  height: 3.8rem;
+  position: relative;
+}
+
+.banner-2 > p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-2 span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.banner-2 a {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.gift {
+  font-weight: normal;
+  width: 100%;
+  height: 100vh;
+}
+
+.gift > h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #293241;
+  font-weight: 700;
+}
+
+.text-flex {
+  margin-top: 3.4rem;
+  width: 83%;
+  display: flex;
+  height: 4.4rem;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(154, 146, 146, 0.7);
+}
+
+.text-flex .text {
+  opacity: 0.7;
+}
+
+.text-flex > div {
+  border: 1px;
+  text-align: center;
+  width: 20rem;
+  height: 5rem;
+  margin-inline: 4rem;
+}
+.text-flex > div:first-child {
+  opacity: 1;
+  border-bottom: 4px solid #293241;
+}
+
+.text-flex p {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.text-flex .full-op {
+  opacity: 1;
+}
+
+.grid-1 {
+  margin-top: 4rem;
+  width: 83%;
+  height: 55rem;
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.grid-1 .card {
+  box-shadow: 0rem 0rem 2rem 0.3rem rgb(0, 0, 0, 0.2);
+}
+
+.grid-1 .card > div:first-child {
+  height: 78%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-d {
+  height: 100%;
+  width: 100%;
+
+  transition: 0.4s;
+}
+
+#d1 {
+  background-image: url("images/blue-back-shoes.jpg");
+  background-size: cover;
+}
+
+#d2 {
+  background-image: url("images/foldinglegs.jpg");
+  background-size: cover;
+}
+
+#d3 {
+  background-image: url("images/on-top.jpg");
+  background-size: cover;
+}
+
+.card:hover .img-d,
+.card:focus .img-d {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.card > div:last-child {
+  height: 16%;
+  width: 87%;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card > div:last-child > div {
+  width: 100%;
+  height: 50%;
+}
+
+.card > div:last-child > div:first-child {
+  border-bottom: 1px solid;
+}
+
+.card h3 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.card hr {
+  width: 100%;
+}
+
+.card img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.purple-back {
+  width: 100%;
+  height: 114.4vh;
+  margin-top: 10rem;
+}
+
+.purple-back > div:first-child {
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/purple.jpg");
+  background-size: cover;
+}
+
+.purple-grid {
+  margin-top: 6rem;
+  margin-inline: auto;
+  width: 60rem;
+  height: 22vh;
+  display: grid;
+  text-align: center;
+  row-gap: 1rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.purple-grid h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #293241;
+}
+.purple-grid p {
+  margin-top: 3px;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.purple-back .buttons-flex-2 {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+.purple-back button {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
+  background-color: #293241;
+  color: white;
+}
+
+.purple-grid button:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: #293241;
+}
+
+.shoes {
+  width: 83%;
+  height: 90vh;
+  margin-inline: auto;
+  margin-top: 9rem;
+}
+
+.shoes > h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #293241;
+}
+
+.shoes-see {
+  margin-top: 3rem;
+  height: 51rem;
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.shoes-see .card-2 {
+  box-shadow: 0rem 0rem 2rem 0.3rem rgb(0, 0, 0, 0.2);
+}
+
+.shoes-see .card-2 > div:first-child {
+  height: 78%;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(239, 237, 237);
+}
+
+.shoe-img {
+  height: 100%;
+  width: 100%;
+
+  transition: 0.4s;
+}
+
+#s1 {
+  background-image: url("images/skyblue_shoes.png");
+  background-size: cover;
+}
+
+#s2 {
+  background-image: url("images/dark-blue-shoe.png");
+  background-size: cover;
+}
+
+#s3 {
+  background-image: url("images/women-shoe.png");
+  background-size: cover;
+}
+
+.card-2:hover .shoe-img,
+.card-2:focus .shoeS-img {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.shoe-info {
+  height: 16%;
+  width: 87%;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.5rem;
+  line-height: 2rem;
+  color: #293241;
+}
+
+.card-2 h3 {
+  margin-top: 5px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.card-2 p {
+  font-size: 1.8rem;
+}
+
+.blue-back {
+  width: 100%;
+  height: 120vh;
+  margin-top: 7rem;
+}
+
+.blue-back > div:first-child {
+  width: 100%;
+  height: 73vh;
+  background-image: url("images/shoesback.jpg");
+  background-size: cover;
+  /* border: 6px solid black; */
+}
+
+.blue-grid {
+  margin-top: 8rem;
+  /*border: 10px solid black; */
+  margin-inline: auto;
+  width: 85%;
+  display: grid;
+  text-align: center;
+  row-gap: 0.5rem;
+  grid-template-rows: repeat(3, 1fr);
+  /* background-color: bisque; */
+}
+
+.blue-grid h2 {
+  /* border: 1px solid; */
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #293241;
+}
+.blue-grid p {
+  /* border: 1px solid; */
+
+  /* margin-top: 3px; */
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.blue-back .buttons-flex-3 {
+  /* border: 1px solid; */
+
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+.blue-back button {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
+  background-color: #293241;
+  color: white;
+}
+
+.blue-grid button:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: #293241;
+}
+
+.collection {
+  width: 83%;
+  height: 95vh;
+  margin-inline: auto;
+  margin-top: 7rem;
+}
+
+.collection > h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #293241;
+}
+
+.coll-see {
+  margin-top: 4rem;
+  height: 59rem;
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.coll-see .card-3 {
+  box-shadow: 0rem 0rem 2rem 0.3rem rgb(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.coll-see .card-3 > div:first-child {
+  height: 73%;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(239, 237, 237);
+}
+
+.coll-img {
+  height: 100%;
+  width: 100%;
+
+  transition: 0.4s;
+}
+
+#c1 {
+  background-image: url("images/note.jpg");
+  background-size: cover;
+}
+
+#c2 {
+  background-image: url("images/lesbians.jpg");
+  background-size: cover;
+}
+
+#c3 {
+  background-image: url("images/takewhiteshoes.jpg");
+  background-size: cover;
+}
+
+.card-3:hover .coll-img,
+.card-3:focus .coll-img {
+  overflow: hidden;
+  transform: scale(1.07);
+}
+
+.coll-info {
+  height: 22%;
+  width: 87%;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.5rem;
+  line-height: 2rem;
+  color: #293241;
+}
+
+.card-3 h3 {
+  margin-top: 5px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.card-3 p {
+  font-size: 1.8rem;
+}
+
+.nature {
+  width: 100%;
+  height: 125vh;
+  margin-top: 8rem;
+}
+
+.nature > div:first-child {
+  width: 100%;
+  height: 73vh;
+  overflow: hidden;
+  /* border: 6px solid black; */
+}
+
+.nature > div img {
+  height: 64rem;
+  width: 100%;
+}
+
+/* .nature-grid {
+  margin-top: 5rem;
+  
+  margin-inline: auto;
+  width: 85%;
+  display: grid;
+  text-align: center;
+  row-gap: 0rem;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  border: 1px solid;
+
+} */
+
+.nature-grid h2 {
+  /* border: 1px solid; */
+  margin-top: 4rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #293241;
+  width: fit-content;
+  margin-inline: auto;
+}
+.nature-grid p {
+  text-align: center;
+  margin-top: 2.7rem;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 45%;
+  margin-inline: auto;
+  /* border: 1px solid; */
+}
+
+.nature-grid > div:last-child {
+  margin-top: 2.6em;
+  width: 100%;
+  text-align: center;
+}
+
+.nature button {
+  width: 25%;
+  height: 5rem;
+  border-radius: 0.3rem;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
+  background-color: #293241;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.nature-grid button:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: #293241;
+}
+
+.stories {
+  width: 83%;
+  height: 127vh;
+  margin-inline: auto;
+}
+
+.stories h2 {
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #293241;
+  width: fit-content;
+}
+
+.story-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  height: 56rem;
+}
+
+.scard {
+  /* border: 1px solid; */
+  box-shadow: 0rem 0rem 2rem 0.3rem rgb(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.scard .container {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid; */
+}
+
+.scard .container div {
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+}
+
+#z1 {
+  background-image: url("images/Stories-Carousel-Tile-min.jpg");
+  background-size: cover;
+}
+
+#z2 {
+  background-image: url("images/shoesfactory.jpg");
+  background-size: cover;
+}
+
+#z3 {
+  background-image: url("images/seemyinnerwears.jpg");
+  background-size: cover;
+}
+
+.scard:hover .simg,
+.scard:focus .simg {
+  transform: scale(1.04);
+}
+
+.scard > div:last-child {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  row-gap: 0.7rem;
+  justify-content: flex-start;
+}
+
+.sinfo h3 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.sinfo p {
+  font-size: 1.8rem;
+}
